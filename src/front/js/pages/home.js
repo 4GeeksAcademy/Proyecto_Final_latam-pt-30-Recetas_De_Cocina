@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
-import {Navbar} from '../component/Navbar';
-import {Header} from '../component/Header';
-import {Categories} from '../component/Categories';
-import {Footer} from '.../component/Footer';
+import {Navbar} from '../component/navbar';
+import {Header} from '../component/header';
+import {Categories} from '../component/categories';
+import { Footer} from "../component/footer";
 
 
 
