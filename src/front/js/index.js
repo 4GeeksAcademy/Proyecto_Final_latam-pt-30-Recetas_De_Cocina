@@ -12,6 +12,7 @@ import { Header } from "./component/header";
 
 //import your own components
 import Layout from "./layout";
+import { Home } from "./pages/home";
 
 //render your react application
-ReactDOM.render(<Layout />, document.querySelector("#app"));
+ReactDOM.render(<Layout/>, document.querySelector("#app"));

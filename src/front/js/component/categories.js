@@ -1,33 +1,66 @@
 import React from 'react';
 
 
-const categories = [
-    { title: 'Postres', description: 'Delicious dessert recipes', image: 'https://via.placeholder.com/150' },
-    { title: 'Desayunos', description: 'Start your day with a great breakfast', image: 'https://via.placeholder.com/150' },
-    { title: 'Almuerzo', description: 'Tasty lunch recipes for any day', image: 'https://via.placeholder.com/150' },
-    { title: 'Recetas Keto', description: 'Healthy and delicious keto recipes', image: 'https://via.placeholder.com/150' },
-];
+
 
 export const Categories = () => {
     return (
-        <Container className="mt-5">
-            <h2 className="text-center mb-4">Choose a Category</h2>
-            <Row>
-                {categories.map((category, index) => (
-                    <Col md={3} key={index}>
-                        <Card className="mb-4">
-                            <Card.Img variant="top" src={category.image} />
-                            <Card.Body className="text-center">
-                                <Card.Title>{category.title}</Card.Title>
-                                <Card.Text>{category.description}</Card.Text>
-                                <a href="#" className="btn btn-primary">View Recipes</a>
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                ))}
-            </Row>
-        </Container>
+        <div className="row">
+            <div className="col-lg-3 col-md-6 mb-4">
+                <div className="card h-100">
+                    <img className="card-img-top" src="https://via.placeholder.com/150" alt="Postres" />
+                    <div className="card-body">
+                        <h4 className="card-title">Postres</h4>
+                        <p className="card-text">Encuentra deliciosos postres para endulzar tu día.</p>
+                    </div>
+                    <div className="card-footer">
+                        <a href="#" className="btn btn-primary">Ver Recetas</a>
+                    </div>
+                </div>
+            </div>
+
+            <div className="col-lg-3 col-md-6 mb-4">
+                <div className="card h-100">
+                    <img className="card-img-top" src="https://via.placeholder.com/150" alt="Desayunos" />
+                    <div className="card-body">
+                        <h4 className="card-title">Desayunos</h4>
+                        <p className="card-text">Comienza tu día con energía con nuestras recetas de desayunos.</p>
+                    </div>
+                    <div className="card-footer">
+                        <a href="#" className="btn btn-primary">Ver Recetas</a>
+                    </div>
+                </div>
+            </div>
+
+            <div className="col-lg-3 col-md-6 mb-4">
+                <div className="card h-100">
+                    <img className="card-img-top" src="https://via.placeholder.com/150" alt="Almuerzo" />
+                    <div className="card-body">
+                        <h4 className="card-title">Almuerzos</h4>
+                        <p className="card-text">Descubre almuerzos nutritivos y deliciosos.</p>
+                    </div>
+                    <div className="card-footer">
+                        <a href="#" className="btn btn-primary">Ver Recetas</a>
+                    </div>
+                </div>
+            </div>
+
+            <div className="col-lg-3 col-md-6 mb-4">
+                <div className="card h-100">
+                    <img className="card-img-top" src="https://via.placeholder.com/150" alt="Recetas Keto" />
+                    <div className="card-body">
+                        <h4 className="card-title">Recetas Keto</h4>
+                        <p className="card-text">Recetas bajas en carbohidratos para tu dieta keto.</p>
+                    </div>
+                    <div className="card-footer">
+                        <a href="#" className="btn btn-primary">Ver Recetas</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     );
 };
+
 
 
