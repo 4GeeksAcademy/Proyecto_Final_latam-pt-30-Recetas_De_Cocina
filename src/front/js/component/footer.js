@@ -1,10 +1,19 @@
-import React, { Component } from "react";
 
-export const Footer = () => (
-	<footer className="footer mt-auto py-3 text-center">
-		<p>
-			Made with <i className="fa fa-heart text-danger" /> by{" "}
-			<a href="http://www.4geeksacademy.com">4Geeks Academy</a>
-		</p>
-	</footer>
-);
+import React from 'react';
+
+
+export const Footer = () => {
+    return (
+        <footer className="bg-light text-center py-3 mt-5">
+            <Container>
+                <Row>
+                    <Col>
+                        <p>&copy; 2024 RecipeApp. All rights reserved.</p>
+                    </Col>
+                </Row>
+            </Container>
+        </footer>
+    );
+};
+
+
